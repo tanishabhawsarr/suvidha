@@ -1,0 +1,41 @@
+.college {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    background: none; /* removed background */
+    justify-content: space-between; /* added to align images */
+  }
+  
+  .college img {
+    width: 400px;
+    height: 300px;
+    background: none; /* removed background */
+    margin: 10px; /* added margin for spacing */
+  }
+
+
+
+  @media (max-width: 900px) {
+    .college {
+      flex-direction: column; /* stack images in a column */
+      align-items: center; /* center images horizontally */
+    }
+  
+    .college img {
+      width: 30%; /* reduce width for tablets */
+      height: auto; /* maintain aspect ratio */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .college {
+      flex-direction: column; /* stack images in a column */
+      align-items: center; /* center images horizontally */
+    }
+  
+    .college img {
+      width: 100%; /* make images full width for mobile phones */
+      height: auto; /* maintain aspect ratio */
+      margin: 5px 0; /* reduce margin for spacing */
+    }
+  }
